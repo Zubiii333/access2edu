@@ -5,11 +5,24 @@ import Link from 'next/link'
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gray-50 h-[80vh] flex items-center overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative h-[80vh] flex items-center overflow-hidden pt-24 lg:pt-32">
+      {/* Mobile Background Image */}
+      <div 
+        className="absolute inset-0 lg:hidden bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/Hero-A2E.svg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-gray-50 bg-opacity-90"></div>
+      </div>
+
+      {/* Desktop Background */}
+      <div className="absolute inset-0 hidden lg:block bg-gray-50"></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-65 items-center">
-          {/* Left Column - Hero Image */}
-          <div className="relative order-1 lg:order-1 h-[400px] flex items-center justify-center">
+          {/* Left Column - Hero Image (Desktop Only) */}
+          <div className="relative order-1 lg:order-1 h-[400px] hidden lg:flex items-center justify-center">
             <div className="w-full h-full flex items-center justify-center">
               <img 
                 src="/Hero-A2E.svg" 
@@ -20,7 +33,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column - Text Content */}
-                      <div className="space-y-8 order-2 lg:order-2">
+          <div className="space-y-8 order-2 lg:order-2 text-center lg:text-left">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-gray-800 leading-tight comfortaa-light">
                 Opening Doors to{' '}
@@ -49,21 +62,6 @@ const HeroSection = () => {
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full opacity-10 -translate-y-32 translate-x-32"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-100 rounded-full opacity-10 translate-y-32 -translate-x-32"></div>
-      
-      {/* Wavy Bottom Transition */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg 
-          className="relative block w-full h-20" 
-          xmlns="http://www.w3.org/2000/svg" 
-          viewBox="0 0 1200 120" 
-          preserveAspectRatio="none"
-        >
-          <path 
-            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z" 
-            fill="#ffffff"
-          />
-        </svg>
-      </div>
     </section>
   )
 }

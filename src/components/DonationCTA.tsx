@@ -19,26 +19,6 @@ const DonationCTA = () => {
           Your Support Changes Lives
         </h2>
 
-        {/* Subheading */}
-        <p className="text-xl md:text-2xl text-blue-100 leading-relaxed mb-8 comfortaa-regular max-w-4xl mx-auto">
-          Every donation helps provide scholarships, educational resources, and opportunities for students who need them most.
-        </p>
-
-        {/* Impact Statistics */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl text-white comfortaa-bold mb-2">$50</div>
-            <p className="text-blue-200 comfortaa-regular">Provides school supplies for one student for a semester</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl text-white comfortaa-bold mb-2">$200</div>
-            <p className="text-blue-200 comfortaa-regular">Covers textbooks and materials for an entire academic year</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl text-white comfortaa-bold mb-2">$500</div>
-            <p className="text-blue-200 comfortaa-regular">Funds a full scholarship for a deserving student</p>
-          </div>
-        </div>
 
         {/* Main Content */}
         <div className="max-w-3xl mx-auto mb-12">
@@ -69,32 +49,9 @@ const DonationCTA = () => {
             Learn More About Our Impact
           </button>
         </div>
-
-        {/* Trust Indicators */}
-        <div className="text-center">
-          <p className="text-blue-200 text-sm comfortaa-regular mb-4">
-            ✓ 100% of your donation goes directly to student scholarships
-          </p>
-          <p className="text-blue-200 text-sm comfortaa-regular">
-            ✓ Tax-deductible • ✓ Secure donation processing • ✓ Monthly impact reports
-          </p>
-        </div>
       </div>
 
-      {/* Bottom Wave Decoration */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg 
-          className="relative block w-full h-16" 
-          xmlns="http://www.w3.org/2000/svg" 
-          viewBox="0 0 1200 120" 
-          preserveAspectRatio="none"
-        >
-          <path 
-            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z" 
-            fill="#ffffff"
-          />
-        </svg>
-      </div>
+
     </section>
   )
 }
