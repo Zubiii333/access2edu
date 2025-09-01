@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const MissionsSection = () => {
   const [hoveredImage, setHoveredImage] = useState<number | null>(null)
@@ -104,7 +104,7 @@ const MissionsSection = () => {
               </h2>
               
               <p className="text-gray-600 text-lg leading-relaxed comfortaa-regular">
-                Education is more than just books and classrooms; it's the foundation for dignity, 
+                Education is more than just books and classrooms; it&apos;s the foundation for dignity, 
                 opportunity, and growth. Through our programs, students who once faced the possibility 
                 of dropping out are now equipped to dream bigger, work harder, and contribute 
                 meaningfully to their communities.

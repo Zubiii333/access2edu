@@ -24,7 +24,7 @@ const DonationCTA = () => {
         <div className="max-w-3xl mx-auto mb-12">
           <p className="text-lg text-blue-100 leading-relaxed comfortaa-regular mb-6">
             Education is the most powerful tool to break the cycle of poverty. When you donate to Access to Education, 
-            you're not just giving money – you're giving hope, opportunity, and a brighter future to students who dream 
+            you&apos;re not just giving money – you&apos;re giving hope, opportunity, and a brighter future to students who dream 
             of something better.
           </p>
           

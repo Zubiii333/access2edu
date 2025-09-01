@@ -35,7 +35,7 @@ const StatisticsSection = () => {
             Our Impact in Numbers
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed comfortaa-regular max-w-3xl mx-auto">
-            Through scholarships and educational programs, we're making a real difference in communities worldwide. Here's the impact we've achieved together.
+            Through scholarships and educational programs, we&apos;re making a real difference in communities worldwide. Here&apos;s the impact we&apos;ve achieved together.
           </p>
         </div>
 
